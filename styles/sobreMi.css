@@ -403,6 +403,21 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-location,
+    .footer-social {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
 }
 
 
