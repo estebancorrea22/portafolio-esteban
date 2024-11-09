@@ -124,6 +124,17 @@ body {
     box-sizing: border-box;
 }
 
+.btn-volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    display: none;
+}
+
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -170,6 +181,8 @@ body {
 .social-link:hover {
     color: #80ED99;
 }
+
+
 
 
 @media (max-width: 768px) {

@@ -14,6 +14,47 @@ body {
     height: 100%;
 }
 
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+body.light-mode .site-header,
+body.light-mode .site-footer {
+    background-color: #e9ecef;
+}
+
+body.light-mode .nav-link {
+    color: #212529;
+}
+
+body.light-mode .nav-link:hover {
+    color: #007bff;
+}
+
+body.light-mode .main-title,
+body.light-mode .main-subtitle {
+    color: #343a40;
+}
+
+body.light-mode .footer-title {
+    color: #343a40;
+}
+
+.toggle-theme {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+body.light-mode .toggle-theme {
+    color: #212529; 
+}
+
+
 .site-header {
     background-color: #212529;
     padding: 10px 20px;
@@ -139,6 +180,17 @@ body {
     box-sizing: border-box;
 }
 
+.btn-volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    display: none;
+}
+
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -153,6 +205,8 @@ body {
     flex: 1;
     margin: 10px;
 }
+
+
 
 .footer-title {
     font-size: 18px;
@@ -169,11 +223,15 @@ body {
     text-align: right;
 }
 
+
+
 .social-links {
     display: flex;
     gap: 10px; 
     justify-content: flex-end;
 }
+
+
 
 .social-link {
     display: inline-block;
@@ -181,6 +239,7 @@ body {
     color: #fff;
     text-decoration: none;
 }
+
 
 .social-link:hover {
     color: #80ED99;
@@ -258,7 +317,6 @@ body {
     }
 }
 
-/* Adjustments for Very Small Screens (320px and below) */
 @media (max-width: 320px) {
     .navbar-brand,
     .navbar-toggler,
@@ -268,7 +326,7 @@ body {
     .main-description,
     .footer-title,
     .footer-text {
-        font-size: calc(0.75em + 0.5vw); /* Responsive font sizes */
+        font-size: calc(0.75em + 0.5vw);
     }
 
     .SideImg {
@@ -277,9 +335,9 @@ body {
     }
 
     .profile-img {
-        width: 100%; /* Asegúrate de que ocupe el 100% del contenedor */
-        max-width: 200px; /* Establece un ancho máximo para mantener una proporción adecuada */
-        height: auto; /* Mantiene la relación de aspecto */
-        margin: 0 auto; /* Centra la imagen */
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 0 auto;
     }
 } 

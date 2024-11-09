@@ -149,6 +149,17 @@ body {
     flex-wrap: wrap;
 }
 
+.btn-volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    display: none;
+}
+
 .footer-location,
 .footer-social {
     flex: 1;
